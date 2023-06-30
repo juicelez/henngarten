@@ -2,17 +2,44 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Your Website Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords"
+              content="Gärtner, Heimsheim, Gartenpflege, Landschaftsgestaltung, Pflanzenpflege, Rasenpflege, Baumpflege, Gartengestaltung, Heckenschnitt, Beetpflege, Rasenmähen, Unkrautbekämpfung, Baumschnitt, Gartenbau, Blumenpflege, Gehölzpflege, Gartenarbeiten">
+        <title>henngarten</title>
+        <meta name="description" content="Your meta description goes here">
         <link rel="stylesheet"
               href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <container>
-        hello
-        <!-- Your website content goes here -->
-        <div class="btn btn-small btn-primary">button</div>
-        </container>
+        <!--Navigation bar-->
+        <div id="navbar"></div>
+        <div class="container-fluid container-xl">
+            <div style="height: 85vh"></div>
+        </div>
+        <footer class="w-100  bg-primary text-white text-opacity-75">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-between py-2">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span>© 2023 henngarten</span>
+                </div>
+                <ul class="nav justify-content-end list-unstyled d-flex align-items-center">
+                    <li class="ms-3">
+                        <a class="btn btn-link-danger" href="{% impressum.html %}">
+                            <span>impressum</span>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="btn btn-link-secondary" href="mailto:kontakt@henngarten.de">kontakt@henngarten.de</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
+<script>
+    $(function(){
+      $("#navbar").load("nav.html");
+    });
+</script>
