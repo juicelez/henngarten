@@ -1,45 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords"
-              content="Gärtner, Heimsheim, Gartenpflege, Landschaftsgestaltung, Pflanzenpflege, Rasenpflege, Baumpflege, Gartengestaltung, Heckenschnitt, Beetpflege, Rasenmähen, Unkrautbekämpfung, Baumschnitt, Gartenbau, Blumenpflege, Gehölzpflege, Gartenarbeiten">
-        <title>henngarten</title>
-        <meta name="description" content="Your meta description goes here">
-        <link rel="stylesheet"
-              href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <!--Navigation bar-->
-        <div id="navbar"></div>
-        <div class="container-fluid container-xl">
-            <div style="height: 85vh"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Gärtner, Heimsheim, Gartenpflege, Landschaftsgestaltung, Pflanzenpflege, Rasenpflege, Baumpflege, Gartengestaltung, Heckenschnitt, Beetpflege, Rasenmähen, Unkrautbekämpfung, Baumschnitt, Gartenbau, Blumenpflege, Gehölzpflege, Gartenarbeiten"
+    />
+    <title>henngarten</title>
+    <meta name="description" content="Your meta description goes here" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div id="navbar"></div>
+
+    <section id="location">
+      <div
+        style="
+          background: url(https://media.houseandgarden.co.uk/photos/618942938373470f8394e03d/4:3/w_2064,h_1548,c_limit/hgfranklintwo7025x.jpg);
+        "
+        class="bg-img text-center row vh-100"
+      >
+        <div
+          class="container px-5 w-75 my-auto fade-in fade-in-visible fade-out-visible"
+        >
+          <div class="text-center text-white">
+            <h2>Ihr Garten – unsere Expertise.</h2>
+          </div>
+          <div class="btn btn-primary text-white">
+            <span>Angebot anfragen</span>
+          </div>
         </div>
-        <footer class="w-100  bg-primary text-white text-opacity-75">
-            <div class="container-fluid container-xl d-flex align-items-center justify-content-between py-2">
-                <div class="col-md-4 d-flex align-items-center">
-                    <span>© 2023 henngarten</span>
-                </div>
-                <ul class="nav justify-content-end list-unstyled d-flex align-items-center">
-                    <li class="ms-3">
-                        <a class="btn btn-link-danger" href="{% impressum.html %}">
-                            <span>impressum</span>
-                        </a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="btn btn-link-secondary" href="mailto:kontakt@henngarten.de">kontakt@henngarten.de</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="container w-75 p-5 vh-100 d-flex justify-content-center flex-column"
+      >
+        <h2 class="h1 fw-bold mb-5">Ihr Kontakt zu uns</h2>
+        <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
+        <form
+          id="contact-form"
+          action="https://api.sendinblue.com/v3/forms/YOUR_FORM_ID/contacts"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefonnummer</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="form-group mb-3">
+            <label for="message">Nachricht</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary text-white">
+            abschicken
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer start -->
+    <footer class="w-100 bg-primary text-white text-opacity-75">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between py-2"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span>© 2023 henngarten</span>
+        </div>
+        <ul
+          class="nav justify-content-end list-unstyled d-flex align-items-center"
+        >
+          <li class="ms-3">
+            <a class="btn btn-link-danger" href="impressum.html"
+              ><span>impressum</span></a
+            >
+          </li>
+          <li class="ms-3">
+            <a
+              class="btn btn-link-secondary"
+              href="mailto:kontakt@henngarten.de"
+              >kontakt@henngarten.de</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
 <script>
-    $(function(){
-      $("#navbar").load("nav.html");
+  $(function () {
+    $("#navbar").load("nav.html");
+  });
+</script>
+
+<script>
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent form submission
+      var form = event.target;
+      var formData = new FormData(form);
+      var request = new XMLHttpRequest();
+
+      request.open(form.method, form.action, true);
+      request.setRequestHeader("Accept", "application/json");
+
+      request.onreadystatechange = function () {
+        if (
+          request.readyState === XMLHttpRequest.DONE &&
+          request.status === 201
+        ) {
+          // Successful submission, display a success message or redirect to a thank-you page
+          console.log("Form submitted successfully!");
+        } else {
+          // Error handling for form submission failure
+          console.error("Form submission failed.");
+        }
+      };
+
+      request.send(formData);
     });
 </script>
