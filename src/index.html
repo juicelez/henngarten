@@ -14,10 +14,19 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- <script>
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+    </script> -->
+
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
-  <body>
+  <body style="font-family: Helvetica, sans-serif">
     <!-- Navigation bar -->
     <div id="navbar"></div>
 
@@ -41,9 +50,82 @@
       </div>
     </section>
 
+    <div class="container p-lg-5 w-lg-75">
+      <!-- services - 'gartenbau' -->
+      <section class="mt-5">
+        <div class="row gap-5">
+          <div
+            class="col-auto col-lg d-flex flex-column justify-content-center dark"
+          >
+            <h2 class="h1 fw-bold">Gartenbau</h2>
+            <p class="text-secondary">
+              Gartenbau ist die Kunst und das Handwerk der Gestaltung, Pflege
+              und Verschönerung von Gärten und Grünflächen. Als Garten- und
+              Landschaftsbauer bringen wir Fachkenntnisse und Kreativität in
+              Ihren Garten und bringen Ihre Vorstellungen in die Gestaltung mit
+              ein.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              class="img-fluid shadow-lg"
+              src="https://media.houseandgarden.co.uk/photos/618942938373470f8394e03d/4:3/w_2064,h_1548,c_limit/hgfranklintwo7025x.jpg"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- services - 'Gartenpflege' -->
+      <section class="mt-5">
+        <div class="row gap-5 d-flex flex-row-reverse">
+          <div
+            class="col-auto col-lg d-flex flex-column justify-content-center dark"
+          >
+            <h2 class="h1 fw-bold">Gartenpflege</h2>
+            <p class="text-secondary">
+              Entdecken Sie unseren Pflanzenverkauf, in dem wir eine breite
+              Auswahl an selbst gezüchteten und aufgezogenen Pflanzen anbieten.
+              Wir legen großen Wert auf Qualität und bieten Ihnen gesunde
+              Pflanzen für Ihren Garten oder Innenbereich.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              class="img-fluid shadow-lg"
+              src="https://media.houseandgarden.co.uk/photos/618942938373470f8394e03d/4:3/w_2064,h_1548,c_limit/hgfranklintwo7025x.jpg"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- services - 'Pflanzenverkaufe' -->
+      <section class="mt-5">
+        <div class="row gap-5">
+          <div
+            class="col-auto col-lg d-flex flex-column justify-content-center dark"
+          >
+            <h2 class="h1 fw-bold">Pflanzenverkauf</h2>
+            <p class="text-secondary">
+              Profitieren Sie von unserem professionellen Gartenpflegeservice,
+              bei dem wir Ihren Garten mit Sorgfalt und Fachkenntnis instand
+              halten. Wir kümmern uns beispielsweise um Rasenmäharbeit,
+              Unkrautbekämpfung, Baumschnitt und allgemeine Gartenpflege. So
+              stellen wir sicher, dass Ihr Außenbereich stets gepflegt und
+              ansprechend aussieht.
+            </p>
+          </div>
+          <div class="col">
+            <img
+              class="img-fluid shadow-lg"
+              src="https://media.houseandgarden.co.uk/photos/618942938373470f8394e03d/4:3/w_2064,h_1548,c_limit/hgfranklintwo7025x.jpg"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- contact form -->
     <section>
       <div
-        class="container w-75 p-5 vh-100 d-flex justify-content-center flex-column"
+        class="container w-lg-75 p-lg-5 vh-100 d-flex justify-content-center flex-column"
       >
         <h2 class="h1 fw-bold mb-5">Ihr Kontakt zu uns</h2>
         <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
@@ -89,43 +171,23 @@
         </form>
       </div>
     </section>
-
     <!-- footer start -->
     <footer class="w-100 bg-primary text-white text-opacity-75">
-      <div
-        class="container-fluid container-xl d-flex align-items-center justify-content-between py-2"
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <span>© 2023 henngarten</span>
-        </div>
-        <ul
-          class="nav justify-content-end list-unstyled d-flex align-items-center"
-        >
-          <li class="ms-3">
-            <a class="btn btn-link-danger" href="impressum.html"
-              ><span>impressum</span></a
-            >
-          </li>
-          <li class="ms-3">
-            <a
-              class="btn btn-link-secondary"
-              href="mailto:kontakt@henngarten.de"
-              >kontakt@henngarten.de</a
-            >
-          </li>
-        </ul>
-      </div>
+      <div id="footer"></div>
     </footer>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+<!-- load navbar -->
 <script>
   $(function () {
     $("#navbar").load("nav.html");
   });
-</script>
 
-<script>
+  $(function () {
+    $("#footer").load("footer.html");
+  });
+
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {

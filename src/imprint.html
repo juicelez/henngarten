@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body style="font-family: Helvetica, sans-serif">
+    <!-- Navigation bar -->
+    <div id="navbar"></div>
+    <div class="container py-5 d-flex flex-column w-75 gap-3">
+      <h1>Impressum</h1>
+      <h3>Verantwortlich: HENN Garten- und Landschaftsbau | Jörg Henn</h3>
+      <p>
+        Mozartstr. 24 71296 Heimsheim <br />
+        Telefon: 07033-390724 Fax: 07033-537817 E-Mail: kontakt@henngarten.de
+        <br />
+        Umsatzsteuer-Identifikationsnummer gemäß $ 27 a: DE 169446644 Keine
+        Haftung: Die Inhalte dieses Webprojektes wurden sorgfältig geprüft und
+        nach bestem Wissen erstellt. Aber für die hier dargebotenen
+        Informationen wird kein Anspruch auf Vollständigkeit, Aktualität,
+        Qualität und Richtigkeit erhoben. Es kann keine Verantwortung für
+        Schäden übernommen werden, die durch das Vertrauen auf die Inhalte
+        dieser Website oder deren Gebrauch entstehen. Schutzrechtsverletzung:
+        Falls Sie vermuten, dass von dieser Website aus eines Ihrer Schutzrechte
+        verletzt wird, teilen Sie das bitte umgehend per elektronischer Post
+        mit, damit zügig Abhilfe geschaffen wird. Bitte nehmen Sie zur Kenntnis:
+        Die zeitaufwändigere Einschaltung eines Anwaltes zur für den
+        Diensteanbieter kostenpflichtigen Abmahnung entspricht nicht dessen
+        wirklichen oder mutmaßlichen Willen. Haftungsausschluss: Internetseiten,
+        auf die von dieser Internetpräsentation aus (durch so genannte
+        Hyperlinks) verwiesen wird, wurden von anderen Anbietern erstellt. Auf
+        ihre Inhalte haben wir keinen Einfluss. Wir übernehmen deshalb keine
+        Verantwortung für die Inhalte auf solchen Verweisseiten.
+      </p>
+    </div>
+    <!-- footer start -->
+    <footer class="w-100 bg-primary text-white text-opacity-75 fixed-bottom">
+      <div id="footer"></div>
+    </footer>
+  </body>
+</html>
+<script>
+  $(function () {
+    $("#navbar").load("nav.html");
+  });
+
+  $(function () {
+    $("#footer").load("footer.html");
+  });
+</script>
