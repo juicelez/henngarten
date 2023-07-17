@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid container-lg">
-    <a class="navbar-brand align-items-center" href="#">
+    <a class="navbar-brand align-items-center" href="index.html">
       <svg
         id="Ebene_2"
         data-name="Ebene 2"
@@ -91,28 +91,52 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-toggle="collapse"
-      data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarSupportedContent"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon text-white"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div
       class="collapse navbar-collapse justify-content-end"
       id="navbarNavAltMarkup"
     >
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="tel:+497033390724"
-          ><i class="bi bi-telephone-fill text-white"></i>Tel. 07033 390724</a
+        <a class="nav-item nav-link" href="#gartenbau">Gartenbau</a>
+        <a class="nav-item nav-link" href="#gartenpflege">Gartenpflege</a>
+        <a class="nav-item nav-link" href="#pflanzenverkauf">Pflanzenverkauf</a>
+        <a class="nav-item nav-link text-white" href="tel:+497033390724"
+          ><i class="bi bi-telephone me-2"></i>Tel. 07033 390724</a
         >
-        <a class="nav-item nav-link" href="#ourservices">Leistungen</a>
-        <a class="nav-item nav-link" href="#ourprojects">Projekte</a>
-        <a class="nav-item nav-link" href="url kontakt.html">Kontakt</a>
+        <a
+          class="nav-item nav-link text-white"
+          href="mailto:contact@joerghenn.com"
+          >Kontakt</a
+        >
       </div>
     </div>
   </div>
 </nav>
 
-<div style="height: 56px "></div>
+<div style="height: 56px"></div>
+
+<script>
+  let prevScrollpos = window.pageYOffset;
+
+  // Add an event listener to the scroll event
+  window.addEventListener("scroll", () => {
+    let currentScrollPos = window.pageYOffset;
+
+    if (prevScrollpos > currentScrollPos) {
+      // Show the navbar when scrolling up
+      document.querySelector(".navbar").style.top = "0";
+    } else {
+      // Hide the navbar when scrolling down
+      document.querySelector(".navbar").style.top = "-100px"; // Adjust the value as needed
+    }
+
+    prevScrollpos = currentScrollPos;
+  });
+</script>

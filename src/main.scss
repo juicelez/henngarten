@@ -12,6 +12,107 @@ $primary: #8bbe1e;
     width: 130px;
     fill: white;
 }
+
+.svg-logo-badge {
+    width: 80px;
+    fill: white;
+}
 input {
     margin-bottom: 20px;
+}
+
+.bg-img {
+    height: 100vh;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    margin: 0;
+}
+
+/* animations */
+
+/* 1.fade-in */
+
+.fade {
+    opacity: .5;
+}
+
+/* 2. fade in on first-load */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadein {
+    animation: fadein 1.5s;
+}
+
+/* navbar */
+.custom-toggler.navbar-toggler {
+    border: none;
+}
+.custom-toggler.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(234,0,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* scroll-animation */
+
+.fade-in {
+    opacity: 0;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    animation: fade-in 0.7s ease-in-out forwards;
+}
+
+.fade-out-visible {
+    opacity: 0;
+    animation: fade-out 0.7s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* animated-nav */
+.smart-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.scrolled-down {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+    position: fixed;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+    transition: top 0.3s ease-in-out;
 }
