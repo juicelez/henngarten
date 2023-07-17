@@ -34,7 +34,7 @@ input {
 /* 1.fade-in */
 
 .fade {
-    opacity: .5;
+    opacity: 0.5;
 }
 
 /* 2. fade in on first-load */
@@ -48,8 +48,12 @@ input {
     }
 }
 
+.navbar a:hover {
+    text-decoration: underline;
+}
+
 .fadein {
-    animation: fadein 1.5s;
+    animation: fadein 1s;
 }
 
 /* navbar */

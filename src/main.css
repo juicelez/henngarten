@@ -12069,8 +12069,12 @@ input {
     opacity: 1;
   }
 }
+.navbar a:hover {
+  text-decoration: underline;
+}
+
 .fadein {
-  animation: fadein 1.5s;
+  animation: fadein 1s;
 }
 
 /* navbar */
