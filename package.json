@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "start": "react-scripts start",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && mv build/index.html build/200.html && surge build"
   },
   "repository": {
     "type": "git",
@@ -24,5 +27,8 @@
     "bootstrap-icons": "^1.10.5",
     "har-validator": "^5.1.5",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
