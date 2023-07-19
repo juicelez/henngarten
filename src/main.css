@@ -12140,4 +12140,8 @@ input {
 
 .navbar {
   transition: top 0.3s ease-in-out;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }/*# sourceMappingURL=main.css.map */
