@@ -130,22 +130,3 @@
     </div>
   </div>
 </nav>
-
-<!-- <div style="height: 56px"></div> -->
-
-<script>
-  const navbar = document.querySelector(".navbar");
-  let prevScrollpos = window.pageYOffset;
-
-  window.addEventListener("scroll", () => {
-    let currentScrollPos = window.pageYOffset;
-
-    if (prevScrollpos > currentScrollPos) {
-      navbar.classList.remove("hidden");
-    } else {
-      navbar.classList.add("hidden");
-    }
-
-    prevScrollpos = currentScrollPos;
-  });
-</script>
