@@ -134,18 +134,16 @@
 <!-- <div style="height: 56px"></div> -->
 
 <script>
+  const navbar = document.querySelector(".navbar");
   let prevScrollpos = window.pageYOffset;
 
-  // Add an event listener to the scroll event
   window.addEventListener("scroll", () => {
     let currentScrollPos = window.pageYOffset;
 
     if (prevScrollpos > currentScrollPos) {
-      // Show the navbar when scrolling up
-      document.querySelector(".navbar").style.top = "0";
+      navbar.classList.remove("hidden");
     } else {
-      // Hide the navbar when scrolling down
-      document.querySelector(".navbar").style.top = "-100px"; // Adjust the value as needed
+      navbar.classList.add("hidden");
     }
 
     prevScrollpos = currentScrollPos;
