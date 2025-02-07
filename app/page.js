@@ -4,9 +4,8 @@ import Header from "./components/header";
 
 export default function Home() {
   return (
-    <div className="container vh-100">
-      hennfick
-      <Header></Header>
+    <div className="vh-100">
+      <Header />
     </div>
   );
 }
