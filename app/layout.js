@@ -1,16 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./global_styles.css";
-import "@/styles/_custom.scss";
+import "@/styles/_custom.scss"
+// import "bootstrap/dist/css/bootstrap.min.css"
+import "./global_styles.css"
 
 export const metadata = {
-  title: "Hennfick",
-  description: "kommt noch",
-};
+	title: "Hennfick",
+	description: "kommt noch",
+}
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body>{children}</body>
+		</html>
+	)
 }
