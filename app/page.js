@@ -7,7 +7,6 @@ export default function Home() {
     <div className="container vh-100">
       hennfick
       <Header></Header>
-      <button className="btn rounded btn-primary shadow">Click Me</button>
     </div>
   );
 }
