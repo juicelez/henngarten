@@ -1,16 +1,22 @@
 "use client" // Mark as client component
-import Image from 'next/image'
-
+import Image from "next/image"
 
 export default function Hero() {
 	return (
 		<section id="hero-section" className="min-vh-100">
-			<div className="bg-img text-center row" style={{ position: 'relative' }}>
+			<div
+				className="bg-img text-center row"
+				style={{ position: "relative" }}
+			>
 				<Image
-					src="/Fingerhut_Jura Kopie.webp"
+					src="/fingerhut_jura.webp"
 					alt="Hero background"
 					fill
-					style={{ objectFit: 'cover', position: 'absolute' }}
+					style={{
+						objectFit: "cover",
+						position: "absolute",
+						zIndex: -1,
+					}}
 					priority
 				/>
 				<div className="container my-auto">
