@@ -10,10 +10,10 @@ export default function Contactform() {
 					id="contact-form"
 					action="https://api.sendinblue.com/v3/forms/YOUR_FORM_ID/contacts"
 					method="post"
-					enctype="multipart/form-data"
+					encType="multipart/form-data"
 				>
 					<div className="form-group">
-						<label for="name">Name</label>
+						<label forhtml="name">Name</label>
 						<input
 							type="text"
 							className="form-control"
@@ -23,7 +23,7 @@ export default function Contactform() {
 						/>
 					</div>
 					<div className="form-group">
-						<label for="phone">Telefonnummer</label>
+						<label forhtml="phone">Telefonnummer</label>
 						<input
 							type="tel"
 							className="form-control"
@@ -33,7 +33,7 @@ export default function Contactform() {
 						/>
 					</div>
 					<div className="form-group mb-3">
-						<label for="message">Nachricht</label>
+						<label forhtml="message">Nachricht</label>
 						<textarea
 							className="form-control"
 							id="message"
@@ -42,7 +42,10 @@ export default function Contactform() {
 							required
 						></textarea>
 					</div>
-					<button type="submit" className="btn btn-primary text-white">
+					<button
+						type="submit"
+						className="btn btn-primary text-white"
+					>
 						abschicken
 					</button>
 				</form>
