@@ -4,9 +4,7 @@ import { useEffect } from "react";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Load Bootstrap JS
 
 export default function Header() {
-  useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
+  
 
   return (
     <nav className="navbar navbar-dark navbar-expand-lg bg-primary fw-bold">
@@ -28,22 +26,22 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav text-white">
             <li className="nav-item">
-              <a className="nav-link" href="mailto:contact@joerghenn.com">
+              <a className="nav-link" href="#contactform">
                 Kontakt
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#gartenpflege">
                 Gartenpflege
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#gartenbau">
                 Gartenbau
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#pflanzenverkauf">
                 Pflanzenverkauf
               </a>
             </li>
