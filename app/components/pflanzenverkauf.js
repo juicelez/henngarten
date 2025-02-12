@@ -20,7 +20,7 @@ export default function Pflanzenverkauf() {
 				<div className="col">
 					<Image
 						className="img-fluid shadow-lg"
-						src="/henngarten_planthosue_.jpeg"
+						src="/planthouse.jpeg"
 						alt="Pflanzenverkauf Impression"
 						width={500}
 						height={300}

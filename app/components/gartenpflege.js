@@ -19,9 +19,9 @@ export default function Gartenpflege() {
 				</div>
 				<div className="col justify-content-center">
 					<Image
-						src="/henngarten_pflege_kreisel.jpg"
+						src="/plants_roundabout.jpg"
 						className="img-fluid shadow-lg"
-						alt="Gartenpflege Impression"
+						alt="Vielfältige Pflanzenlandschaft auf Kreisverkehr"
 						width={500}
 						height={300}
 					/>

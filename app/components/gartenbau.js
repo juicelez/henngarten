@@ -18,8 +18,8 @@ export default function Gartenbau() {
 				<div className="col d-flex justify-content-center">
 					<Image
 						className="shadow-lg"
-						src="/henngarten_mueller_wasser.jpg"
-						alt="Gartenbau Impression"
+						src="/garden_pool_terrace.jpg"
+						alt="Garten im Grünen, mit Pool, Terasse, gepflegtem Rasen und einem schön angelegten Steingarten."
 						width={500}
 						height={300}
 					/>
