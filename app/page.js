@@ -1,10 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import Image from "next/image";
-import styles from "./page.module.css";
 
-import { Container, Row, Col } from "react-bootstrap";
 // Components
 import Hero from "./components/hero";
 import Header from "./components/header";
@@ -20,11 +17,12 @@ export default function Home() {
 
   return (
     <div className="vh-100">
-      <Row>
-        <Col>
-          <Header />
-        </Col>
-      </Row>
+      <Header />
+      <Hero />
+      <Gartenbau />
+      <Gartenpflege />
+      <Pflanzenverkauf />
+      <Contactform />
     </div>
   );
 }
