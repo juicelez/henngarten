@@ -1,4 +1,6 @@
+"use client";
 
+import { useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -12,9 +14,17 @@ import Gartenpflege from "./components/gartenpflege"
 import Pflanzenverkauf from "./components/pflanzenverkauf"
 
 export default function Home() {
+  useEffect(() => {
+    // Client-side only code here
+  }, []);
+
   return (
     <div className="vh-100">
-      <Header />
+      <Row>
+        <Col>
+          <Header />
+        </Col>
+      </Row>
     </div>
   );
 }
