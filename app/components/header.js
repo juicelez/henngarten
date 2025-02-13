@@ -1,48 +1,32 @@
-"use client"
+"use client"; // Mark as client component
+
+import { useEffect } from "react";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 export default function Header() {
-	return (
-		<nav className="navbar navbar-dark navbar-expand-lg bg-primary fw-bold">
-			<div className="container-fluid">
-				<a className="navbar-brand" href="#">
-					Logo
-				</a>
-				<button
-					className="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span className="navbar-toggler-icon"></span>
-				</button>
-				<div className="collapse navbar-collapse" id="navbarNav">
-					<ul className="navbar-nav text-white">
-						<li className="nav-item">
-							<a className="nav-link" href="#contactform">
-								Kontakt
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#gartenpflege">
-								Gartenpflege
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#gartenbau">
-								Gartenbau
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#pflanzenverkauf">
-								Pflanzenverkauf
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	)
+  useEffect(() => {
+    // Client-side only code here
+  }, []);
+
+  return (
+    <Navbar
+      bg="primary"
+      variant="dark"
+      expand="lg"
+      className="fw-bold position-fixed start-0 top-0 w-100"
+    >
+      <Container fluid>
+        <Navbar.Brand href="#">Logo</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Collapse id="navbarNav">
+          <Nav className="me-auto">
+            <Nav.Link href="#contactform">Kontakt</Nav.Link>
+            <Nav.Link href="#gartenpflege">Gartenpflege</Nav.Link>
+            <Nav.Link href="#gartenbau">Gartenbau</Nav.Link>
+            <Nav.Link href="#pflanzenverkauf">Pflanzenverkauf</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
