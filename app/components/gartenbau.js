@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { Button } from "react-bootstrap";
 
 export default function Gartenbau() {
   return (
@@ -13,6 +14,9 @@ export default function Gartenbau() {
             Landschaftsbauer bringen wir Fachkenntnisse und Kreativität in Ihren
             Garten und bringen Ihre Vorstellungen in die Gestaltung mit ein.
           </p>
+          <Button href="#contactform" variant="primary">
+            Kontakt aufnehmen
+          </Button>
         </div>
         <div className="col d-flex justify-content-center">
           <Image

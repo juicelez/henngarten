@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { Button } from "react-bootstrap";
 
 export default function Gartenpflege() {
   return (
@@ -14,6 +15,9 @@ export default function Gartenpflege() {
             Baumschnitt und allgemeine Gartenpflege. So stellen wir sicher, dass
             Ihr Außenbereich stets gepflegt und ansprechend aussieht.
           </p>
+          <Button href="#contactform" variant="primary">
+            Kontakt aufnehmen
+          </Button>
         </div>
         <div className="col justify-content-center">
           <Image

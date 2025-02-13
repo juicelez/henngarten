@@ -1,6 +1,7 @@
 "use client";
 // Mark as client component
 import Image from "next/image";
+import { Button } from "react-bootstrap";
 
 export default function Pflanzenverkauf() {
   return (
@@ -15,6 +16,9 @@ export default function Pflanzenverkauf() {
             regional im Enzkreis erzeugt und großgezogen. Qualität die sich
             durch langelebige und gesunde Pflanzen auszeichnet
           </p>
+          <Button href="#contactform" variant="primary">
+            Kontakt aufnehmen
+          </Button>
         </div>
         <div className="col">
           <Image
