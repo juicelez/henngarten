@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-"use client"
-
 "use client"; // Mark as client component
 
 import { useEffect } from "react";
