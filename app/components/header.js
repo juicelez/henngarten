@@ -1,6 +1,6 @@
 "use client"; // Mark as client component
 
-import { Navbar, Container, Nav, Image } from "react-bootstrap";
+import { Navbar, Nav, Image } from "react-bootstrap";
 
 export default function Header() {
   return (
