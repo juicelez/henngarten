@@ -11,6 +11,7 @@ export default function Hero() {
     >
       <Image
         fill
+        priority
         src="/fingerhut_jura.webp"
         alt="Garten hinter einem Haus. Menschen auf Treppe."
         style={{ objectFit: "cover" }}

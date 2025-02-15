@@ -12,6 +12,17 @@ import Pflanzenverkauf from "./components/pflanzenverkauf";
 import contentblocks from "./data/content-blocks.json";
 import Footer from "./components/footer";
 export default function Home() {
+  useEffect(() => {
+    const links = document.querySelectorAll('a[href*="#"]');
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  }, []);
   return (
     <div className="vh-100">
       <Header />

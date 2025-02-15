@@ -10,13 +10,14 @@ export default function Header() {
       expand="lg"
       className="px-5 fixed-top fw-bold"
     >
-      <Navbar.Brand href="#">
+      <Navbar.Brand href="#hero-section">
         <Image
           roundedCircle
           alt="Logo von Henngarten. Blatt mit H für Henngarten als Füllung."
           src="/favicon.png"
           style={{ background: "white", width: "40px" }}
         />
+        Henn Garten- und Landschaftsbau
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" />
       <Navbar.Collapse id="navbarNav">
