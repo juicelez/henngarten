@@ -8,11 +8,12 @@ export default function Header() {
       bg="primary"
       variant="dark"
       expand="lg"
-      className="px-5 sticky-top fw-bold"
+      className="px-5 fixed-top fw-bold"
     >
       <Navbar.Brand href="#">
         <Image
           roundedCircle
+          alt="Logo von Henngarten. Blatt mit H für Henngarten als Füllung."
           src="/favicon.png"
           style={{ background: "white", width: "40px" }}
         />

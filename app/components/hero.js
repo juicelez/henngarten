@@ -7,7 +7,7 @@ export default function Hero() {
     <section
       id="hero-section"
       className="position-relative d-flex justify-content-center align-items-center"
-      style={{ height: "50vh" }}
+      style={{ height: "80vh" }}
     >
       <Image
         fill
