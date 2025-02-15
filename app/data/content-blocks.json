@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gartenbau",
+    "title": "Gartenbau",
+    "text": "Gartenbau ist die Kunst und das Handwerk der Gestaltung, Pflege und Verschönerung von Gärten und Grünflächen. Als Garten- und Landschaftsbauer bringen wir Fachkenntnisse und Kreativität in Ihren Garten und bringen Ihre Vorstellungen in die Gestaltung mit ein.",
+    "image_url": "/garden_pool_terrace.jpg",
+    "image_alt": "Garten im Grünen, mit Pool, Terasse, gepflegtem Rasen und einem schön angelegten Steingarten."
+  },
+  {
+    "id": "gartenpflege",
+    "title": "Gartenpflege",
+    "text": "Profitieren Sie von unserem professionellen Gartenpflegeservice, beidem wir Ihren Garten mit Sorgfalt und Fachkenntnis instand halten. Wir kümmern uns beispielsweise um Rasenmäharbeit, Unkrautbekämpfung, Baumschnitt und allgemeine Gartenpflege. So stellen wir sicher, dass Ihr Außenbereich stets gepflegt und ansprechend aussieht.",
+    "image_url": "/plants_roundabout.jpg",
+    "image_alt": "Vielfältige Pflanzenlandschaft auf Kreisverkehr."
+  }
+]
