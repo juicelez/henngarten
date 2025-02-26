@@ -1,6 +1,7 @@
 "use client"; // Mark as client component
 import Image from "next/image";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import ContactButton from "./ContactButton";
 
 export default function Hero() {
   return (
@@ -18,14 +19,12 @@ export default function Hero() {
       />
       <Container
         fluid
-        className="bg-dark bg-opacity-25 z-1 justify-content-center align-items-center flex-column text-center py-5 m-0"
+        className="bg-dark bg-opacity-25 z-1 py-5 d-flex flex-column justify-content-center align-items-center"
       >
         <h1 className="fw-bold text-white mb-3">
           Ihr Garten – unsere Expertise.
         </h1>
-        <Button href="#contactform" variant="primary">
-          Kontakt aufnehmen
-        </Button>
+        <ContactButton />
       </Container>
     </section>
   );

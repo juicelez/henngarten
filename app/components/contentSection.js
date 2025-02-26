@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Button, Container, Row, Col } from "react-bootstrap";
+import ContactButton from "./ContactButton";
 
 export default function ContentSection({
   id,
@@ -12,7 +13,10 @@ export default function ContentSection({
   reverseDirection,
 }) {
   return (
-    <section className="content-section--image-text" id={id}>
+    <section
+      className="content-section--image-text d-flex flex-column justify-content-center my-5"
+      id={id}
+    >
       <Container>
         <Row
           className={`d-flex gap-4 gap-lg-5 align-items-center flex-column-reverse ${
@@ -22,11 +26,7 @@ export default function ContentSection({
           <Col>
             <h2 className="h1 fw-bold">{title}</h2>
             <p className="text-secondary">{text}</p>
-            {showButton && (
-              <Button href="#contactform" variant="primary">
-                Kontakt aufnehmen
-              </Button>
-            )}
+            {showButton && <ContactButton />}
           </Col>
           <Col>
             <Image
