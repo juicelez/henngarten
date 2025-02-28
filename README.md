@@ -1,10 +1,13 @@
 # Henngarten
+
 Webauftritt für Henn - Garten und Landschaftsbau. Welche Service bietet Henngarten an?
 
 ## Lucide Icons
+
 Free React integrated Icons mit [MIT License](https://lucide.dev/license).
 
 ### Usage
+
 Lucide Icons können als React JSX object eingefügt werden. Optional können Farbe, Größe und Stroke-Width per props eingestellt werden:
 
 ```js
@@ -19,4 +22,4 @@ export default function SunIcon(){
 }
 ```
 
-[Zur Übersicht verfügbarer Icons](https://lucide.dev/icons/).
+[Zur Übersicht verfügbarer Icons](https://lucide.dev/icons/)
