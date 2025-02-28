@@ -1,2 +1,44 @@
-$primary: #98bb3d;
+$primary: #8bbe1e;
 @import "bootstrap/scss/bootstrap";
+
+@mixin desktop-lg {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin desktop-xl {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+@mixin desktop-xxl {
+  @media (min-width: 1900px) {
+    @content;
+  }
+}
+
+.content-section--image-text {
+  @extend .d-flex, .flex-column, .justify-content-center, .text-dark, .my-5;
+  @include desktop-lg {
+    min-height: 55vh;
+  }
+  @include desktop-xl {
+    min-height: 50vh;
+  }
+  @include desktop-xxl {
+    height: 45vh;
+  }
+}
+
+.btn.btn-primary:hover {
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  @extend .border-bottom, .border-primary;
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  @extend .border-bottom, .border-white;
+}

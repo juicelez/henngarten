@@ -5,7 +5,8 @@
     "text": "Gartenbau ist die Kunst und das Handwerk der Gestaltung, Pflege und Verschönerung von Gärten und Grünflächen. Als Garten- und Landschaftsbauer bringen wir Fachkenntnisse und Kreativität in Ihren Garten und bringen Ihre Vorstellungen in die Gestaltung mit ein.",
     "image_url": "/garden_pool_terrace.jpg",
     "image_alt": "Garten im Grünen, mit Pool, Terasse, gepflegtem Rasen und einem schön angelegten Steingarten.",
-    "showButton": true
+    "showButton": true,
+    "reverseDirection": false
   },
   {
     "id": "gartenpflege",
@@ -13,6 +14,16 @@
     "text": "Profitieren Sie von unserem professionellen Gartenpflegeservice, beidem wir Ihren Garten mit Sorgfalt und Fachkenntnis instand halten. Wir kümmern uns beispielsweise um Rasenmäharbeit, Unkrautbekämpfung, Baumschnitt und allgemeine Gartenpflege. So stellen wir sicher, dass Ihr Außenbereich stets gepflegt und ansprechend aussieht.",
     "image_url": "/plants_roundabout.jpg",
     "image_alt": "Vielfältige Pflanzenlandschaft auf Kreisverkehr.",
-    "showButton": false
+    "showButton": false,
+    "reverseDirection": true
+  },
+  {
+    "id": "pflanzenverkauf",
+    "title": "Pflanzungen & Verkauf",
+    "text": "Entdecken Sie unsere breite Auswahl an selbst gezüchteten und aufgezogenen Pflanzen. Wir legen großen Wert auf Qualität und bieten Ihnen gesunde Pflanzen für Ihren Garten oder Innenbereich. Alles regional im Enzkreis erzeugt und großgezogen. Qualität die sich durch langlebige und gesunde Pflanzen auszeichnet.",
+    "image_url": "/planthouse.jpeg",
+    "image_alt": "Pflanzenverkauf Impression",
+    "showButton": true,
+    "reverseDirection": false
   }
 ]

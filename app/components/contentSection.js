@@ -9,11 +9,16 @@ export default function ContentSection({
   image_url,
   image_alt_text,
   showButton,
+  reverseDirection,
 }) {
   return (
-    <section className="py-5" id={id}>
+    <section className="content-section--image-text" id={id}>
       <Container>
-        <Row className="d-flex flex-column-reverse flex-lg-row gap-5 align-items-center">
+        <Row
+          className={`d-flex gap-4 gap-lg-5 align-items-center flex-column-reverse ${
+            reverseDirection ? "flex-lg-row-reverse" : "flex-column flex-lg-row"
+          }`}
+        >
           <Col>
             <h2 className="h1 fw-bold">{title}</h2>
             <p className="text-secondary">{text}</p>
@@ -31,7 +36,7 @@ export default function ContentSection({
               layout="responsive"
               width={100}
               height={100}
-              style={{ width: "100%", minHeight: "300px" }}
+              style={{ width: "100%", maxHeight: "400px" }}
             />
           </Col>
         </Row>
