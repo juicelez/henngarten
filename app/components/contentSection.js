@@ -7,7 +7,7 @@ export default function ContentSection({
   title,
   text,
   image_url,
-  image_alt_text,
+  image_alt,
   showButton,
   reverseDirection,
 }) {
@@ -32,7 +32,7 @@ export default function ContentSection({
             <Image
               className="shadow-lg rounded"
               src={image_url}
-              alt={image_alt_text}
+              alt={image_alt}
               layout="responsive"
               width={100}
               height={100}
