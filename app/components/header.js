@@ -1,6 +1,6 @@
 "use client"; // Mark as client component
 
-import { Navbar, Nav, Image, Container } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import HennGartenLogo from "./logo"; // Corrected import path
 
 export default function Header() {
